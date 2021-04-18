@@ -1,4 +1,4 @@
-# justink8s
+# JustinK8s
 
 Welcome to the repository for justink8s.com (documenting my Kubernetes journey).  This repository will share what it takes to create the website.
 
