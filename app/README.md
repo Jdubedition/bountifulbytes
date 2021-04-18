@@ -22,3 +22,13 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### App Setup
+* Frameworks/Structure
+  * Vue
+    * Plugin: typescript
+    * Plugin: vuetify
+    * Theme: blog-free (https://store.vuetifyjs.com/products/blog-theme-free)
+* Favicon.ico - Creacted using https://favicon.io/favicon-generator/ and Kubernetes style
+  * Font: Ubuntu
+  * Color: #326ce5
