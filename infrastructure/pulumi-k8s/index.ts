@@ -1,6 +1,9 @@
 import * as k8s from "@pulumi/kubernetes";
 import * as kx from "@pulumi/kubernetesx";
+import * as pulumi from "@pulumi/pulumi";
 
+const config = new pulumi.Config();
+const image = config.require("image");
 const appName = "justink8s-app";
 const appLabels = { app: "justink8s-app" };
 const deployment = new k8s.apps.v1.Deployment(appName, {
@@ -9,7 +12,7 @@ const deployment = new k8s.apps.v1.Deployment(appName, {
         replicas: 1,
         template: {
             metadata: { labels: appLabels },
-            spec: { containers: [{ name: appName, image: "jdubedition/justink8s-app:2021.04.18.1" }] }
+            spec: { containers: [{ name: appName, image: image }] }
         }
     }
 });
@@ -22,7 +25,7 @@ const frontend = new k8s.core.v1.Service(appName, {
             port: 8080,
             targetPort: 80,
             protocol: "TCP",
-            nodePort: 32000
+            nodePort: 32100
         }],
         selector: appLabels
     }
