@@ -1,9 +1,5 @@
 <template>
   <v-app>
-    <v-main>
-      <Home />
-    </v-main>
-
     <core-app-bar />
 
     <core-drawer />
@@ -16,7 +12,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Home from "./components/Home.vue";
 import CoreDrawer from "./components/core/Drawer.vue";
 import CoreFooter from "./components/core/Footer.vue";
 import CoreAppBar from "./components/core/AppBar.vue";
@@ -26,7 +21,6 @@ export default Vue.extend({
   name: "App",
 
   components: {
-    Home,
     CoreDrawer,
     CoreFooter,
     CoreAppBar,
