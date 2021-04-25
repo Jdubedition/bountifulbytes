@@ -6,7 +6,7 @@
 
     <core-app-bar />
 
-    <!-- <core-drawer /> -->
+    <core-drawer />
 
     <core-view />
 
