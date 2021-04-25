@@ -8,7 +8,7 @@
 
     <!-- <core-drawer /> -->
 
-    <!-- <core-view /> -->
+    <core-view />
 
     <!-- <core-footer /> -->
   </v-app>
