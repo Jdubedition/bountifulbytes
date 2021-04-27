@@ -15,5 +15,5 @@
   * Setup cloudflared to run in background and restart
 * Pulumi
   * Create new Pulumi K8s project
-  * Not using Pulumi hosted service for now, so setup with `pulumi login file://<location on workstation>`.  Using Google drive as backup location for files.
+  * Login to Pulumi service with saved access token and `pulumi login`
 * DockerHub - storing images in public repositories for now, but could use private and then setup authentication with K8s
