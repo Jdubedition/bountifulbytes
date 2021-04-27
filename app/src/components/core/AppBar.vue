@@ -20,7 +20,7 @@
           v-bind="link"
           class="hidden-sm-and-down"
           text
-          @click="test($event, link)"
+          @click="onClick($event, link)"
         >
           {{ link.text }}
         </v-btn>
@@ -58,10 +58,6 @@ export default {
       if (item.to || !item.href) return;
 
       this.$vuetify.goTo(item.href.endsWith("!") ? 0 : item.href);
-    },
-    test: function ($event, link) {
-      console.log("This is from test!");
-      this.onClick($event, link);
     },
   },
 };
