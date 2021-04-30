@@ -3,7 +3,7 @@
     <v-img
       :src="require('@/assets/earth-3866609-1920-darker.jpg')"
       class="grey lighten-2"
-      height="400"
+      height="200"
       width="100%"
     >
       <v-row
@@ -20,7 +20,7 @@
           </h1>
 
           <div class="subheading text-uppercase pl-2 mb-4">
-            The Kubernetes Journey
+            To Kube or not to Kube
           </div>
 
           <!-- <v-btn

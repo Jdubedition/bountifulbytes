@@ -57,7 +57,7 @@ export default {
   },
 
   data: () => ({
-    layout: [1],
+    layout: [1, 1],
     page: 1,
   }),
 

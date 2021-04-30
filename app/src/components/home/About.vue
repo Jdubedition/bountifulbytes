@@ -15,11 +15,14 @@
       <v-col cols="10">
         <p>
           Hello, my name is Justin Wesley, and JustinK8s is a place for me to
-          share my Kubernetes journey with the world.
+          share my Kubernetes journey (with the delightfully unique twist of my
+          personality and perspective).
         </p>
         <p>
-          JustinK8s will help me share the things that I learn, by making the
-          whole of this site available to you. From code to hosting, I will
+          JustinK8s will help me communicate the things that I learn about
+          Kubernetes and its surrounding ecosystem. The first way I will
+          leverage JustinK8s towards this goal, is by making the whole of this
+          site's architecture available to you. From code to browser, I will
           share how JustinK8s is made.
         </p>
 

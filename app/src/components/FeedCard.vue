@@ -1,56 +1,77 @@
 <template>
-  <v-col cols="12" :md="size === 2 ? 6 : size === 3 ? 4 : undefined">
-    <base-card
-      :height="value.prominent ? 450 : 350"
-      color="grey lighten-1"
-      dark
-      href="#!"
-    >
-      <v-img
-        :src="require(`@/assets/articles/${value.hero}`)"
-        height="100%"
-        gradient="rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)"
+  <v-col>
+    <v-col cols="12" :md="size === 2 ? 6 : size === 3 ? 4 : undefined">
+      <base-card
+        :height="reveal ? 900 : value.prominent ? 450 : 350"
+        color="grey lighten-1"
+        dark
+        href="#!"
       >
-        <v-row v-if="!value.prominent" class="fill-height text-right ma-0">
-          <v-col cols="12">
-            <v-chip
-              label
-              class="mx-0 mb-2 text-uppercase"
-              color="grey darken-3"
-              text-color="white"
-              small
-              @click.stop=""
-            >
-              {{ value.category }}
-            </v-chip>
+        <v-img
+          :src="require(`@/assets/articles/${value.hero}`)"
+          height="100%"
+          gradient="rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)"
+          @click="reveal = true"
+        >
+          <v-row v-if="!value.prominent" class="fill-height text-right ma-0">
+            <v-col cols="12">
+              <v-chip
+                label
+                class="mx-0 mb-2 text-uppercase"
+                color="grey darken-3"
+                text-color="white"
+                small
+                @click.stop=""
+              >
+                {{ value.category }}
+              </v-chip>
 
-            <h3 class="title font-weight-bold mb-2">
-              {{ value.title }}
-            </h3>
+              <h3 class="title font-weight-bold mb-2">
+                {{ value.title }}
+              </h3>
 
-            <div class="caption">{{ value.author }}<br />{{ value.date }}</div>
-          </v-col>
+              <div class="caption">
+                {{ value.author }}<br />{{ value.date }}
+              </div>
+            </v-col>
 
-          <v-col align-self="end">
-            <v-chip
-              class="text-uppercase ma-0"
-              color="primary"
-              label
-              small
-              @click.stop=""
-            >
-              Read More
-            </v-chip>
-          </v-col>
-        </v-row>
-      </v-img>
-    </base-card>
+          </v-row>
+        </v-img>
+        <v-expand-transition>
+          <v-card
+            v-if="reveal"
+            class="transition-fast-in-fast-out v-card--reveal"
+            style="height: 100%"
+          >
+            <v-card-text class="pb-0">
+              <p class="display-1 text--primary" align="center">
+                {{ value.title }}
+              </p>
+              <p align="center" justify="center">
+                {{ value.content }}
+              </p>
+            </v-card-text>
+            <v-card-actions class="pt-0 justify-center">
+              <v-btn text color="teal accent-4" @click="reveal = false">
+                Close
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-expand-transition>
+      </base-card>
+    </v-col>
   </v-col>
 </template>
 
 <script>
 export default {
   name: "FeedCard",
+
+  data: () => {
+    return {
+      reveal: false,
+    };
+  },
 
   props: {
     size: {
@@ -68,5 +89,11 @@ export default {
 <style>
 .v-image__image {
   transition: 0.3s linear;
+}
+.v-card--reveal {
+  bottom: 0;
+  opacity: 1 !important;
+  position: absolute;
+  width: 100%;
 }
 </style>

@@ -17,3 +17,7 @@
   * Create new Pulumi K8s project
   * Login to Pulumi service with saved access token and `pulumi login`
 * DockerHub - storing images in public repositories for now, but could use private and then setup authentication with K8s
+* Images
+  * https://pixabay.com/
+  * https://unsplash.com/
+  * https://www.pexels.com/
