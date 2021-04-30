@@ -1,2 +1,2 @@
 config:
-  pulumi-k8s:image: jdubedition/justink8s-app:2021.04.25.1
+  pulumi-k8s:image: jdubedition/justink8s-app:2021.04.29.1
