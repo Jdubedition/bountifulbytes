@@ -2,7 +2,7 @@
   <v-col>
     <v-col cols="12" :md="size === 2 ? 6 : size === 3 ? 4 : undefined">
       <base-card
-        :height="reveal ? 900 : value.prominent ? 450 : 350"
+        :height="value.prominent ? 450 : 350"
         color="grey lighten-1"
         dark
         href="#!"
@@ -11,7 +11,7 @@
           :src="require(`@/assets/articles/${value.hero}`)"
           height="100%"
           gradient="rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)"
-          @click="reveal = true"
+          @click="reveal = !reveal"
         >
           <v-row v-if="!value.prominent" class="fill-height text-right ma-0">
             <v-col cols="12">
@@ -34,31 +34,27 @@
                 {{ value.author }}<br />{{ value.date }}
               </div>
             </v-col>
-
           </v-row>
         </v-img>
-        <v-expand-transition>
-          <v-card
-            v-if="reveal"
-            class="transition-fast-in-fast-out v-card--reveal"
-            style="height: 100%"
-          >
-            <v-card-text class="pb-0">
-              <p class="display-1 text--primary" align="center">
-                {{ value.title }}
-              </p>
-              <p align="center" justify="center">
-                {{ value.content }}
-              </p>
-            </v-card-text>
-            <v-card-actions class="pt-0 justify-center">
-              <v-btn text color="teal accent-4" @click="reveal = false">
-                Close
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-expand-transition>
       </base-card>
+      <v-expand-transition>
+        <div v-show="reveal" class="grey darken-4">
+          <v-divider></v-divider>
+          <v-card-text class="pb-0">
+            <p class="display-1 text--primary" align="center">
+              {{ value.title }}
+            </p>
+            <p align="center" justify="center">
+              {{ value.content }}
+            </p>
+          </v-card-text>
+          <v-card-actions class="pt-0 justify-center">
+            <v-btn text color="teal accent-4" @click="reveal = false">
+              Close
+            </v-btn>
+          </v-card-actions>
+        </div>
+      </v-expand-transition>
     </v-col>
   </v-col>
 </template>

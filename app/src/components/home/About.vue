@@ -4,12 +4,12 @@
 
     <v-row>
       <v-col cols="2">
-        <v-img
-          :src="require('@/assets/justin-headshot-2021.jpg')"
-          class="grey lighten-2"
-          width="100"
-          height="100"
-        />
+          <v-img
+            :src="require('@/assets/justin-headshot-2021.jpg')"
+            class="grey lighten-2 rounded-lg"
+            width="100"
+            minHeight="50"
+          />
       </v-col>
 
       <v-col cols="10">
