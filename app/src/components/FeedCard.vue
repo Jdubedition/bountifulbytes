@@ -15,7 +15,8 @@
         >
           <v-row v-if="!value.prominent" class="fill-height text-right ma-0">
             <v-col cols="12">
-              <v-chip
+              <!-- Not using categories until later, but keeping code here for that time -->
+              <!-- <v-chip
                 label
                 class="mx-0 mb-2 text-uppercase"
                 color="grey darken-3"
@@ -24,7 +25,7 @@
                 @click.stop=""
               >
                 {{ value.category }}
-              </v-chip>
+              </v-chip> -->
 
               <h3 class="title font-weight-bold mb-2">
                 {{ value.title }}

@@ -22,19 +22,21 @@ export default new Vuex.Store({
     categories: state => {
       const categories: any = []
 
-      for (const article of state.articles) {
-        if (
-          !article.category ||
-          categories.find((category: any) => category.text === article.category)
-        ) continue
+      // * Not going to use the categories until needed as it just adds complexity to site at this time
+      // * and I do not know the best way to group or show categories as of right now
+      // for (const article of state.articles) {
+      //   if (
+      //     !article.category ||
+      //     categories.find((category: any) => category.text === article.category)
+      //   ) continue
 
-        const text = article.category
+      //   const text = article.category
 
-        categories.push({
-          text,
-          href: '#!',
-        })
-      }
+      //   categories.push({
+      //     text,
+      //     href: '#!',
+      //   })
+      // }
 
       return categories.sort().slice(0, 4)
     },
