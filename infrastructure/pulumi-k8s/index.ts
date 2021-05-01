@@ -9,7 +9,7 @@ const appLabels = { app: "justink8s-app" };
 const deployment = new k8s.apps.v1.Deployment(appName, {
     spec: {
         selector: { matchLabels: appLabels },
-        replicas: 1,
+        replicas: 2,
         template: {
             metadata: { labels: appLabels },
             spec: { containers: [{ name: appName, image: image }] }
