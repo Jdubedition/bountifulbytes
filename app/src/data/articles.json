@@ -5,7 +5,7 @@
         "category": "KubeCore",
         "hero": "pexels-martin-petras-287487-spark.jpg",
         "date": "2021-04-25",
-        "content": "Mighty oaks from little acorns grow."
+        "content": "1.md"
     },
     {
         "title": "Are You Not Contained!",
@@ -13,6 +13,6 @@
         "category": "Containers",
         "hero": "port-614543_1920.jpg",
         "date": "2021-04-27",
-        "content": "Making matryoshka dolls out of applications."
+        "content": "2.md"
     }
 ]

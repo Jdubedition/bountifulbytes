@@ -45,9 +45,11 @@
             <p class="display-1 text--primary" align="center">
               {{ value.title }}
             </p>
-            <p align="center" justify="center">
-              {{ value.content }}
-            </p>
+            <p
+              v-html="test(require(`@/assets/articles/${value.content}`))"
+              align="center"
+              justify="center"
+            ></p>
           </v-card-text>
           <v-card-actions class="pt-0 justify-center">
             <v-btn text color="teal accent-4" @click="reveal = false">
@@ -61,13 +63,23 @@
 </template>
 
 <script>
+import marked from "marked";
+import DOMPurify from "dompurify";
 export default {
   name: "FeedCard",
 
   data: () => {
     return {
       reveal: false,
+      input:
+        '# hello ![test](https://justink8s.com/img/jk-192x192.b722359b.png) <img src="https://justink8s.com/img/jk-192x192.b722359b.png" alt="drawing" style="width:50px;"/>',
     };
+  },
+
+  methods: {
+    test(markdown) {
+      return DOMPurify.sanitize(marked(markdown));
+    },
   },
 
   props: {
