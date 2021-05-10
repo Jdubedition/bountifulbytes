@@ -25,6 +25,15 @@
           {{ link.text }}
         </v-btn>
 
+        <v-btn
+            dark
+            href="https://github.com/Jdubedition/justink8s/"
+            target="_blank"
+          >
+            <br />
+            <v-icon dark> mdi-git </v-icon>
+          </v-btn>
+
         <v-spacer />
 
         <!-- <v-text-field
@@ -32,7 +41,7 @@
           flat
           hide-details
           solo-inverted
-          style="max-width: 300px;"
+          style="max-width: 300px"
         /> -->
       </v-row>
     </v-container>

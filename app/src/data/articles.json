@@ -1,6 +1,7 @@
 [
     {
         "title": "In The Beginning",
+        "flavor": "Mighty oaks from little acorns grow.",
         "author": "Justin Wesley",
         "category": "KubeCore",
         "hero": "pexels-martin-petras-287487-spark.jpg",
@@ -9,6 +10,7 @@
     },
     {
         "title": "Are You Not Contained!",
+        "flavor": "Making matryoshka dolls out of applications.",
         "author": "Justin Wesley",
         "category": "Containers",
         "hero": "port-614543_1920.jpg",

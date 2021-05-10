@@ -4,19 +4,18 @@
 
     <v-row>
       <v-col cols="2">
-          <v-img
-            :src="require('@/assets/justin-headshot-2021.jpg')"
-            class="grey lighten-2 rounded-lg"
-            width="100"
-            minHeight="50"
-          />
+        <v-img
+          :src="require('@/assets/justin-headshot-2021.jpg')"
+          class="grey lighten-2 rounded-lg"
+          width="100"
+          minHeight="50"
+        />
       </v-col>
 
       <v-col cols="10">
         <p>
           Hello, my name is Justin Wesley, and JustinK8s is a place for me to
-          share my Kubernetes journey (with the delightfully unique twist of my
-          personality and perspective).
+          share my Kubernetes journey with the world.
         </p>
         <p>
           JustinK8s will help me communicate the things that I learn about
@@ -27,18 +26,13 @@
         </p>
 
         <p>
-          To follow the evolution of this website, watch this repository:
-          <v-btn
-            class="ma-2"
-            color="grey"
-            dark
-            href="https://github.com/Jdubedition/justink8s/"
-            target="_blank"
-          >
-            Source Code
-            <br />
-            <v-icon large dark> mdi-github </v-icon>
-          </v-btn>
+          To follow the evolution of this website, click on the git link at the
+          top of the page.
+        </p>
+        <p>
+          If you have questions, comments, or suggestions, please send an email
+          to:
+          <a href="mailto: me@justink8s.com">me@justink8s.com</a>.
         </p>
       </v-col>
     </v-row>

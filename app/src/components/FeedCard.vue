@@ -45,12 +45,14 @@
             <p class="display-1 text--primary" align="center">
               {{ value.title }}
             </p>
-            <p
-              v-html="test(require(`@/assets/articles/${value.content}`))"
-              align="center"
-              justify="center"
-            ></p>
+            <p class="diplay-2 text-primary font-italic" align="center">
+              {{ value.flavor }}
+            </p>
           </v-card-text>
+          <div
+            v-html="test(require(`@/assets/articles/${value.content}`))"
+            style="padding: 30px"
+          ></div>
           <v-card-actions class="pt-0 justify-center">
             <v-btn text color="teal accent-4" @click="reveal = false">
               Close
@@ -65,14 +67,18 @@
 <script>
 import marked from "marked";
 import DOMPurify from "dompurify";
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
+import "prismjs/components/prism-json";
+import "prismjs/components/prism-typescript";
+import "prismjs/components/prism-yaml";
+
 export default {
   name: "FeedCard",
 
   data: () => {
     return {
       reveal: false,
-      input:
-        '# hello ![test](https://justink8s.com/img/jk-192x192.b722359b.png) <img src="https://justink8s.com/img/jk-192x192.b722359b.png" alt="drawing" style="width:50px;"/>',
     };
   },
 
@@ -92,6 +98,10 @@ export default {
       default: () => ({}),
     },
   },
+
+  mounted() {
+    Prism.highlightAll();
+  },
 };
 </script>
 
@@ -104,5 +114,16 @@ export default {
   opacity: 1 !important;
   position: absolute;
   width: 100%;
+}
+.theme--dark.v-application code {
+  background-color: unset;
+}
+
+.v-application code {
+  padding: unset;
+}
+
+pre {
+  border-radius: 7px;
 }
 </style>
