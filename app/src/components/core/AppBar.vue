@@ -27,6 +27,7 @@
 
         <v-btn
             dark
+            icon
             href="https://github.com/Jdubedition/justink8s/"
             target="_blank"
           >
