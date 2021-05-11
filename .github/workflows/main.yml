@@ -48,7 +48,14 @@ jobs:
       - name: Image digest/tag
         run: echo ${{ steps.docker_build.outputs.digest }}
 
-      - uses: pulumi/action-install-pulumi-cli@v1
+      - name: Install Pulumi
+        uses: pulumi/action-install-pulumi-cli@v1
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - run: npm install
 
       - uses: pulumi/actions@v3
         with:
