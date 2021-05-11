@@ -65,5 +65,5 @@ jobs:
           stack-name: dev-app
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          KUBE_CONFIG: $${{ secrets.KUBE_CONFIG }}
+          KUBERNETES_MASTER: $${{ secrets.KUBE_CONFIG }}
           APP_IMAGE: jdubedition/justink8s-app:${{ github.sha }}
