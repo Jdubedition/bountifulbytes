@@ -56,6 +56,7 @@ jobs:
         with:
           node-version: 14.x
       - run: npm install
+        working-directory: infrastructure/pulumi-k8s
 
       - uses: pulumi/actions@v3
         with:
