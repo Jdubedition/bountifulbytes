@@ -65,9 +65,7 @@ jobs:
         working-directory: infrastructure/pulumi-k8s
 
       # Set the kubeconfig file
-      - uses: actions-hub/kubectl@master
-        env:
-          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+      - run: echo ${{ secrets.KUBE_CONFIG }} | base64 --decode > kubeconfig
 
       - uses: pulumi/actions@v3
         with:
@@ -76,4 +74,5 @@ jobs:
           stack-name: dev-app
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          KUBECONFIG: kubeconfig
           APP_IMAGE: jdubedition/justink8s-app:${{ github.sha }}
