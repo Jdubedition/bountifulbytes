@@ -65,3 +65,9 @@ jobs:
           stack-name: dev-app
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+
+      - uses: actions-hub/kubectl@master
+        env:
+          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+        with:
+          args: set image deployment/justink8s-app justink8s-app=jdubedition/justink8s-app:${{ github.sha }}

@@ -13,7 +13,7 @@ const deployment = new k8s.apps.v1.Deployment(appName, {
         replicas: 2,
         template: {
             metadata: { labels: appLabels },
-            spec: { containers: [{ name: appName }] }
+            spec: { containers: [{ name: appName, image: "jdubedition/justink8s-app:latest" }] }
         }
     }
 });
