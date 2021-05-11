@@ -50,7 +50,7 @@ jobs:
 
       - uses: pulumi/action-install-pulumi-cli@v1
 
-      - uses: pulumi/actions@v3
+      - uses: pulumi/actions@v2
         with:
           command: preview
           work-dir: infrastructure/pulumi-k8s
