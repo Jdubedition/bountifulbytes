@@ -60,7 +60,7 @@ jobs:
 
       - uses: pulumi/actions@v3
         with:
-          command: preview
+          command: up
           work-dir: infrastructure/pulumi-k8s
           stack-name: dev-app
         env:
