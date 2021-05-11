@@ -43,7 +43,7 @@ jobs:
         with:
           file: containers/app.Dockerfile
           push: true
-          tags: user/justink8s-app:${{ steps.docker_build.outputs.digest }}
+          tags: jdubedition/justink8s-app:${{ github.sha }}
 
       - name: Image digest/tag
         run: echo ${{ steps.docker_build.outputs.digest }}
