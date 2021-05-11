@@ -65,7 +65,10 @@ jobs:
         working-directory: infrastructure/pulumi-k8s
 
       # Set the kubeconfig file
-      - run: echo ${{ secrets.KUBE_CONFIG }} | base64 --decode > kubeconfig
+      - run: 'echo "$KUBE_CONFIG" | base64 --decode > kubeconfig'
+        shell: bash
+        env:
+          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
 
       - uses: pulumi/actions@v3
         with:
