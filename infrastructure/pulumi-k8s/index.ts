@@ -2,17 +2,18 @@ import * as k8s from "@pulumi/kubernetes";
 import * as kx from "@pulumi/kubernetesx";
 import * as pulumi from "@pulumi/pulumi";
 
-const config = new pulumi.Config();
-const image = config.require("image");
 const appName = "justink8s-app";
 const appLabels = { app: "justink8s-app" };
 const deployment = new k8s.apps.v1.Deployment(appName, {
+    metadata: {
+        name: appName,
+    },
     spec: {
         selector: { matchLabels: appLabels },
         replicas: 2,
         template: {
             metadata: { labels: appLabels },
-            spec: { containers: [{ name: appName, image: image }] }
+            spec: { containers: [{ name: appName }] }
         }
     }
 });
