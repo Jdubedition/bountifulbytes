@@ -1,9 +1,15 @@
 import * as k8s from "@pulumi/kubernetes";
-import * as kx from "@pulumi/kubernetesx";
 import * as pulumi from "@pulumi/pulumi";
 
+const config = new pulumi.Config();
+let image = config.require("image");
 const appName = "justink8s-app";
 const appLabels = { app: "justink8s-app" };
+
+if (process.env["APP_IMAGE"] !== undefined) {
+    image = process.env["APP_IMAGE"];
+}
+
 const deployment = new k8s.apps.v1.Deployment(appName, {
     metadata: {
         name: appName,
@@ -13,7 +19,7 @@ const deployment = new k8s.apps.v1.Deployment(appName, {
         replicas: 2,
         template: {
             metadata: { labels: appLabels },
-            spec: { containers: [{ name: appName, image: "jdubedition/justink8s-app:latest" }] }
+            spec: { containers: [{ name: appName, image: image }] }
         }
     }
 });

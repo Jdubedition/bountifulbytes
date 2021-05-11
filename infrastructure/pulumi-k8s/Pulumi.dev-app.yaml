@@ -1,1 +1,2 @@
 config:
+  pulumi-k8s:image: jdubedition/justink8s-app:latest
