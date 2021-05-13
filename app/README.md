@@ -23,7 +23,7 @@ yarn lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### ## Components and Setup
+## Components and Setup
 * Frameworks/Structure
   * Vue
     * Plugin: typescript
