@@ -15,7 +15,7 @@
       <v-col cols="10">
         <p>
           Hello, my name is Justin Wesley, and JustinK8s is a place for me to
-          share my Kubernetes journey with the world.
+          share my exploration of Kubernetes with the world.
         </p>
         <p>
           JustinK8s will help me communicate the things that I learn about
@@ -26,7 +26,7 @@
         </p>
 
         <p>
-          To follow the evolution of this website, click on the git link at the
+          To follow the evolution of this website, click on the Git link at the
           top of the page.
         </p>
         <p>
