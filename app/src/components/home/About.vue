@@ -19,7 +19,7 @@
         </p>
         <p>
           JustinK8s will help me communicate the things that I learn about
-          Kubernetes and the surrounding ecosystem. The first way I will
+          Kubernetes and its surrounding ecosystem. The first way I will
           leverage JustinK8s towards this goal, is by making the whole of this
           site's architecture available to you. From code to browser, I will
           share how JustinK8s is made.
