@@ -72,6 +72,14 @@ import "prismjs/themes/prism-tomorrow.css";
 import "prismjs/components/prism-json";
 import "prismjs/components/prism-typescript";
 import "prismjs/components/prism-yaml";
+import emoji from "node-emoji";
+
+function parse(markdown) {
+  const replacer = (match) => emoji.emojify(match);
+  markdown = markdown.replace(/(:.*:)/g, replacer);
+
+  return marked(markdown);
+}
 
 export default {
   name: "FeedCard",
@@ -84,7 +92,7 @@ export default {
 
   methods: {
     test(markdown) {
-      return DOMPurify.sanitize(marked(markdown));
+      return DOMPurify.sanitize(parse(markdown));
     },
   },
 
