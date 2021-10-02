@@ -10,7 +10,7 @@
 * CloudFlare
   * Find and purchase domain with Google Domains
   * In Google Domains, disable DNSSEC and wait for period of time before setting up CloudFlare name servers
-  * Setup cloudflared (tunneling agent) and configure endpoints to use nodeports
+  * Setup cloudflared (tunneling agent) and configure endpoints to use nodeports (https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup)
   * Make required changes to Cloudflare DNS settings to utilize tunnel
   * Setup cloudflared to run in background and restart
 * Pulumi
