@@ -17,3 +17,12 @@
   * Create new Pulumi K8s project
   * Login to Pulumi service with saved access token and `pulumi login`
 * DockerHub - storing images in public repositories for now, but could use private and then setup authentication with K8s
+* Desktop server
+  * Linux containers for virtualization
+  * MicroK8s on VM
+    * Enable add-ons dns metrics-server
+    * Create kubectl config: `microk8s config > .kube/config`
+* Flux
+  * Deploys code changes made to this repo using pull mechanism
+  * Leverages Kustomization definition in this repo
+

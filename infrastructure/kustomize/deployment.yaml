@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: justink8s
+  labels:
+    app: justink8s
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: justink8s
+  template:
+    metadata:
+      labels:
+        app: justink8s
+    spec:
+      containers:
+      - name: justink8s
+        image: jdubedition/justink8s-app:latest
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: 500m
+            memory: 1GB
+          limits:
+            cpu: 500m
+            memory: 1GB
