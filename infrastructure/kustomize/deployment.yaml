@@ -15,14 +15,14 @@ spec:
         app: justink8s
     spec:
       containers:
-      - name: justink8s
-        image: jdubedition/justink8s-app:latest
-        ports:
-        - containerPort: 8080
-        resources:
-          requests:
-            cpu: 500m
-            memory: 1GB
-          limits:
-            cpu: 500m
-            memory: 1GB
+        - name: justink8s
+          image: jdubedition/justink8s-app:latest
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              cpu: 500m
+              memory: 1GB
+            limits:
+              cpu: 500m
+              memory: 1GB

@@ -20,9 +20,9 @@
 * Desktop server
   * Linux containers for virtualization
   * MicroK8s on VM
+    * Disable add-on ha-cluster (flux does not work with this add-on)
     * Enable add-ons dns metrics-server
     * Create kubectl config: `microk8s config > .kube/config`
 * Flux
   * Deploys code changes made to this repo using pull mechanism
   * Leverages Kustomization definition in this repo
-
