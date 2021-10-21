@@ -50,7 +50,7 @@
             </p>
           </v-card-text>
           <div
-            v-html="test(require(`@/assets/articles/${value.content}`))"
+            v-html="generate(require(`@/assets/articles/${value.content}`))"
             style="padding: 30px"
           ></div>
           <v-card-actions class="pt-0 justify-center">
@@ -67,11 +67,11 @@
 <script>
 import marked from "marked";
 import DOMPurify from "dompurify";
-import Prism from "prismjs";
+import prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
+import "prismjs/components/prism-markup";
 import "prismjs/components/prism-json";
 import "prismjs/components/prism-typescript";
-import "prismjs/components/prism-bash";
 import "prismjs/components/prism-yaml";
 import emoji from "node-emoji";
 
@@ -92,7 +92,7 @@ export default {
   },
 
   methods: {
-    test(markdown) {
+    generate(markdown) {
       return DOMPurify.sanitize(parse(markdown));
     },
   },
@@ -109,7 +109,7 @@ export default {
   },
 
   mounted() {
-    Prism.highlightAll();
+    prism.highlightAll();
   },
 };
 </script>
@@ -124,15 +124,19 @@ export default {
   position: absolute;
   width: 100%;
 }
-.theme--dark.v-application code {
+.theme--dark.v-application pre code {
   background-color: unset;
 }
 
-.v-application code {
+.v-application pre code {
   padding: unset;
 }
 
 pre {
+  border-radius: 7px;
+}
+
+img {
   border-radius: 7px;
 }
 </style>
