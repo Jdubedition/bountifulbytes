@@ -73,6 +73,24 @@ import "prismjs/components/prism-bash";
 import "prismjs/components/prism-yaml";
 import emoji from "node-emoji";
 
+DOMPurify.addHook("afterSanitizeAttributes", function (node) {
+  if (node.hasAttribute("href") && !node.getAttribute("href").startsWith(`#`)) {
+    // set all elements owning target to target=_blank
+    if ("target" in node) {
+      node.setAttribute("target", "_blank");
+      // prevent https://www.owasp.org/index.php/Reverse_Tabnabbing
+      node.setAttribute("rel", "noopener noreferrer nofollow");
+    }
+    // set non-HTML/MathML links to xlink:show=new
+    if (
+      !node.hasAttribute("target") &&
+      (node.hasAttribute("xlink:href") || node.hasAttribute("href"))
+    ) {
+      node.setAttribute("xlink:show", "new");
+    }
+  }
+});
+
 function parse(markdown) {
   const replacer = (match) => emoji.emojify(match);
   markdown = markdown.replace(/(:.*:)/g, replacer);
