@@ -89,6 +89,10 @@ DOMPurify.addHook("afterSanitizeAttributes", function (node) {
       node.setAttribute("xlink:show", "new");
     }
   }
+
+  if (node.nodeName.toLowerCase() === "img") {
+    node.setAttribute("class", "v-responsive__content");
+  }
 });
 
 function parse(markdown) {
