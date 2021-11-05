@@ -15,7 +15,7 @@
           md="7"
           offset-md="5"
         >
-          <h1 class="display-3 font-weight-light">
+          <h1 class="display-2 font-weight-light">
             BountifulBytes
           </h1>
 

@@ -19,7 +19,7 @@
           machines learning, and other related topics with the world.
         </p>
         <p>
-          BountifulBytes will help me communicate the things that I learn and act as a portal
+          BountifulBytes will help me communicate things I learn and act as a portal
           to code/examples. The first way I will
           leverage BountifulBytes towards this goal, is by making the whole of this
           site's architecture available to you. From code to browser, I will
