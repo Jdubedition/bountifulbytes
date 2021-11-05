@@ -1,2 +1,2 @@
 config:
-  pulumi-k8s:image: jdubedition/justink8s-app:latest
+  pulumi-k8s:image: jdubedition/bountifulbytes-app:latest

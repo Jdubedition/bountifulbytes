@@ -27,7 +27,7 @@ jobs:
         with:
           file: containers/app.Dockerfile
           push: true
-          tags: jdubedition/justink8s-app:${{ github.sha }},jdubedition/justink8s-app:latest
+          tags: jdubedition/bountifulbytes-app:${{ github.sha }},jdubedition/bountifulbytes-app:latest
 
       - name: Image digest/tag
         run: echo ${{ steps.docker_build.outputs.digest }}
@@ -61,5 +61,5 @@ jobs:
           stack-name: dev-app
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
-          KUBECONFIG: /home/runner/work/justink8s/justink8s/kubeconfig
-          APP_IMAGE: jdubedition/justink8s-app:${{ github.sha }}
+          KUBECONFIG: /home/runner/work/bountifulbytes/bountifulbytes/kubeconfig
+          APP_IMAGE: jdubedition/bountifulbytes-app:${{ github.sha }}

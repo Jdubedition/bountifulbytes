@@ -5,7 +5,7 @@
     <v-container class="mx-auto py-0">
       <v-row align="center">
         <v-img
-          :src="require('@/assets/jk-192x192.png')"
+          :src="require('@/assets/bb-192x192.png')"
           class="mr-5"
           contain
           height="48"
@@ -28,7 +28,7 @@
         <v-btn
             dark
             icon
-            href="https://github.com/Jdubedition/justink8s/"
+            href="https://github.com/Jdubedition/bountifulbytes/"
             target="_blank"
           >
             <br />

@@ -3,9 +3,8 @@ import * as pulumi from "@pulumi/pulumi";
 
 const config = new pulumi.Config();
 let image = config.require("image");
-const appName = "justink8s-app";
-const newAppName = "bountifulbytes-app";
-const appLabels = { app: "justink8s-app" };
+const appName = "bountifulbytes-app";
+const appLabels = { app: "bountifulbytes-app" };
 
 if (process.env["APP_IMAGE"] !== undefined) {
     image = process.env["APP_IMAGE"];
@@ -34,20 +33,6 @@ const frontend = new k8s.core.v1.Service(appName, {
             targetPort: 80,
             protocol: "TCP",
             nodePort: 32100
-        }],
-        selector: appLabels
-    }
-});
-
-const newFrontend = new k8s.core.v1.Service(newAppName, {
-    metadata: { labels: deployment.spec.template.metadata.labels },
-    spec: {
-        type: "NodePort",
-        ports: [{
-            port: 8080,
-            targetPort: 80,
-            protocol: "TCP",
-            nodePort: 32101
         }],
         selector: appLabels
     }

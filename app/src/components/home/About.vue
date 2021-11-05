@@ -1,6 +1,6 @@
 <template>
   <v-container id="about" tag="section">
-    <base-subheading>About JustinK8s</base-subheading>
+    <base-subheading>About BountifulBytes</base-subheading>
 
     <v-row>
       <v-col cols="2">
@@ -14,15 +14,16 @@
 
       <v-col cols="10">
         <p>
-          Hello, my name is Justin Wesley, and JustinK8s is a place for me to
-          share my exploration of Kubernetes with the world.
+          Hello, my name is Justin Wesley, and BountifulBytes is a place for me to
+          share my exploration of Kubernetes, distributed systems, software engineering,
+          machines learning, and other related topics with the world.
         </p>
         <p>
-          JustinK8s will help me communicate the things that I learn about
-          Kubernetes and its surrounding ecosystem. The first way I will
-          leverage JustinK8s towards this goal, is by making the whole of this
+          BountifulBytes will help me communicate the things that I learn and act as a portal
+          to code/examples. The first way I will
+          leverage BountifulBytes towards this goal, is by making the whole of this
           site's architecture available to you. From code to browser, I will
-          share how JustinK8s is made.
+          share how BountifulBytes is made.
         </p>
 
         <p>
@@ -32,7 +33,7 @@
         <p>
           If you have questions, comments, or suggestions, please send an email
           to:
-          <a href="mailto: me@justink8s.com">me@justink8s.com</a>.
+          <a href="mailto: justin@bountifulbytes.com">justin@bountifulbytes.com</a>.
         </p>
       </v-col>
     </v-row>

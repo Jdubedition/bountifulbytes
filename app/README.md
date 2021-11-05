@@ -40,4 +40,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   * raw-loader to enable Typescript to read markdown files
   * Marked - Markdown renderer
   * PrismJS - Syntax highlighter used for code blocks in articles that are produced by markdown renderer, marked.
-* forwardemail.net to send email to/from me@justink8s.com and Gmail account
+* forwardemail.net to send email to/from justin@bountifulbytes.com and Gmail account

@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: justink8s
+  name: bountifulbytes
   labels:
-    app: justink8s
+    app: bountifulbytes
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: justink8s
+      app: bountifulbytes
   template:
     metadata:
       labels:
-        app: justink8s
+        app: bountifulbytes
     spec:
       containers:
-        - name: justink8s
-          image: jdubedition/justink8s-app:latest
+        - name: bountifulbytes
+          image: jdubedition/bountifulbytes-app:latest
           ports:
             - containerPort: 8080
           resources:
