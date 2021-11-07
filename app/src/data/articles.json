@@ -16,5 +16,14 @@
         "hero": "port-614543_1920.jpg",
         "date": "2021-11-07",
         "content": "2.md"
+    },
+    {
+        "title": "Cryptography In A Bottle",
+        "flavor": "Don't go chasing bubbles, please stick to the applications and deployments that you're used to.",
+        "author": "Justin Wesley",
+        "category": "Containers",
+        "hero": "pexels-anna-shvets-4588002.jpg",
+        "date": "TBD",
+        "content": "3.md"
     }
 ]
