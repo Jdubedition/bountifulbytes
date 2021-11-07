@@ -71,6 +71,7 @@ import prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import "prismjs/components/prism-bash";
 import "prismjs/components/prism-yaml";
+import "prismjs/components/prism-json";
 import emoji from "node-emoji";
 
 DOMPurify.addHook("afterSanitizeAttributes", function (node) {
