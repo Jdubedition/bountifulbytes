@@ -32,3 +32,8 @@ export default Vue.extend({
   }),
 });
 </script>
+<style>
+.max-width-container {
+  max-width: 1200px;
+}
+</style>

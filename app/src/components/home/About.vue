@@ -1,5 +1,5 @@
 <template>
-  <v-container id="about" tag="section">
+  <v-container class="max-width-container" id="about" tag="section">
     <base-subheading>About BountifulBytes</base-subheading>
 
     <v-row>

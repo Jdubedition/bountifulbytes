@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="max-width-container">
     <v-row>
       <v-col cols="12">
         <slot />

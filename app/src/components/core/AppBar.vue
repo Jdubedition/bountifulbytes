@@ -2,7 +2,7 @@
   <v-app-bar app flat>
     <v-app-bar-nav-icon class="hidden-md-and-up" @click="toggleDrawer" />
 
-    <v-container class="mx-auto py-0">
+    <v-container class="mx-auto py-0 max-width-container" >
       <v-row align="center">
         <v-img
           :src="require('@/assets/bb-192x192.png')"
