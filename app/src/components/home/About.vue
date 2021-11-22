@@ -14,26 +14,37 @@
 
       <v-col cols="10">
         <p>
-          Hello, my name is Justin Wesley, and BountifulBytes is a place for me to
-          share my exploration of Kubernetes, distributed systems, software engineering,
-          machines learning, and other related topics with the world.
+          Hello, my name is Justin Wesley, and BountifulBytes is a place for me
+          to share my exploration of Kubernetes, distributed systems, software
+          engineering, machines learning, decentralized applications, and who
+          knows what else...
         </p>
         <p>
-          BountifulBytes will help me communicate things I learn and act as a portal
-          to code/examples. The first way I will
-          leverage BountifulBytes towards this goal, is by making the whole of this
-          site's architecture available to you. From code to browser, I will
-          share how BountifulBytes is made.
+          BountifulBytes will help me communicate things I learn and act as a
+          bridge to code/examples. The first way I will leverage BountifulBytes
+          towards this goal, is by making the whole of this site's architecture
+          available to you. From code to browser, I will share how
+          BountifulBytes is made.
         </p>
 
         <p>
-          To follow the evolution of this website, click on the Git link at the
-          top of the page.
+          To follow the evolution of this website, click here:
+          <v-btn
+            dark
+            icon
+            href="https://github.com/Jdubedition/bountifulbytes/"
+            target="_blank"
+          >
+            <br />
+            <v-icon dark> mdi-git </v-icon>
+          </v-btn>
         </p>
         <p>
           If you have questions, comments, or suggestions, please send an email
           to:
-          <a href="mailto: justin@bountifulbytes.com">justin@bountifulbytes.com</a>.
+          <a href="mailto: justin@bountifulbytes.com"
+            >justin@bountifulbytes.com</a
+          >.
         </p>
       </v-col>
     </v-row>
