@@ -57,18 +57,18 @@ export default {
   },
 
   data: () => ({
-    layout: [1, 1],
+    layout: [1, 1, 1, 1, 1],
     page: 1,
   }),
 
   computed: {
     ...mapState(["articles"]),
     pages() {
-      return Math.ceil(this.articles.length / 11);
+      return Math.ceil(this.articles.length / 6);
     },
     paginatedArticles() {
-      const start = (this.page - 1) * 11;
-      const stop = this.page * 11;
+      const start = (this.page - 1) * 6;
+      const stop = this.page * 6;
 
       return this.articles.slice(start, stop);
     },
