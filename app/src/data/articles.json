@@ -1,11 +1,20 @@
 [
     {
+        "title": "Blocks! Blocks! Blocks!",
+        "flavor": "One block, two block, red block, blue block.",
+        "author": "Justin Wesley",
+        "category": "Blockchain",
+        "hero": "pexels-sharon-mccutcheon-1148496.jpg",
+        "date": "TBD",
+        "content": "4.md"
+    },
+    {
         "title": "Cryptography In A Bottle",
         "flavor": "Don't go chasing crypto bubbles, please stick to the applications and deployments that you're used to.",
         "author": "Justin Wesley",
-        "category": "Containers",
+        "category": "Blockchain",
         "hero": "pexels-anna-shvets-4588002.jpg",
-        "date": "TBD",
+        "date": "2021-11-27",
         "content": "3.md"
     },
     {
