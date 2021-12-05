@@ -1,6 +1,6 @@
 [
     {
-        "title": "Blocks! Blocks! Blocks!",
+        "title": "Block on Block",
         "flavor": "One block, two block, red block, blue block.",
         "author": "Justin Wesley",
         "category": "Blockchain",
@@ -30,7 +30,7 @@
         "title": "In The Beginning",
         "flavor": "Mighty oaks from little acorns grow.",
         "author": "Justin Wesley",
-        "category": "KubeCore",
+        "category": "Kubernetes",
         "hero": "pexels-martin-petras-287487-spark.jpg",
         "date": "2021-10-24",
         "content": "1.md"
