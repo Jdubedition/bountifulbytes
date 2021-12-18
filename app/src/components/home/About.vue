@@ -15,16 +15,16 @@
       <v-col cols="10">
         <p>
           Hello, my name is Justin Wesley, and BountifulBytes is a place for me
-          to share my exploration of Kubernetes, distributed systems, software
-          engineering, machines learning, decentralized applications, and who
-          knows what else...
+          to share my exploration of software engineering, distributed systems,
+          decentralized applications, machines learning and who knows what
+          else...
         </p>
         <p>
-          BountifulBytes will help me communicate things I learn and act as a
-          bridge to code/examples. The first way I will leverage BountifulBytes
-          towards this goal, is by making the whole of this site's architecture
-          available to you. From code to browser, I will share how
-          BountifulBytes is made.
+          BountifulBytes will help me share things I learn and act as a bridge
+          from explanation (maybe some pontification) to code/examples. The
+          first way I will leverage BountifulBytes towards this goal, is by
+          making the whole of this site's architecture available to you. From
+          code to browser, I will share how BountifulBytes is made.
         </p>
 
         <p>
