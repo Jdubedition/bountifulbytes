@@ -14,11 +14,12 @@
     </v-row>
 
     <v-row align="center">
-      <v-col cols="3">
+      <v-col class="text-right" cols="5">
         <base-btn
           v-if="page !== 1"
           class="ml-0"
           square
+          outlined
           title="Previous page"
           @click="page--"
         >
@@ -26,15 +27,16 @@
         </base-btn>
       </v-col>
 
-      <v-col class="text-center subheading" cols="6">
-        PAGE {{ page }} OF {{ pages }}
+      <v-col class="text-center subheading" cols="2">
+        Page {{ page }} Of {{ pages }}
       </v-col>
 
-      <v-col class="text-right" cols="3">
+      <v-col class="text-left" cols="5">
         <base-btn
           v-if="pages > 1 && page < pages"
           class="mr-0"
           square
+          outlined
           title="Next page"
           @click="page++"
         >
@@ -64,11 +66,11 @@ export default {
   computed: {
     ...mapState(["articles"]),
     pages() {
-      return Math.ceil(this.articles.length / 6);
+      return Math.ceil(this.articles.length / 5);
     },
     paginatedArticles() {
-      const start = (this.page - 1) * 6;
-      const stop = this.page * 6;
+      const start = (this.page - 1) * 5;
+      const stop = this.page * 5;
 
       return this.articles.slice(start, stop);
     },

@@ -1,5 +1,23 @@
 [
     {
+        "title": "Of Mountains And Software",
+        "flavor": "You can see farther by standing upon the shoulders of giants.",
+        "author": "Justin Wesley",
+        "category": "Theory",
+        "hero": "joris-beugels-L8bZAwmQK1M-unsplash.jpg",
+        "date": "TBD",
+        "content": "6.md"
+    },
+    {
+        "title": "Space + Time + Observer",
+        "flavor": "It's all relative.",
+        "author": "Justin Wesley",
+        "category": "Theory",
+        "hero": "greg-rakozy-oMpAz-DN-9I-unsplash.jpg",
+        "date": "TBD",
+        "content": "5.md"
+    },
+    {
         "title": "Block on Block",
         "flavor": "One block, two block, red block, blue block.",
         "author": "Justin Wesley",
