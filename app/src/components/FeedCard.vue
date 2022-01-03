@@ -34,6 +34,17 @@
               <div class="caption">
                 {{ value.author }}<br />{{ value.date }}
               </div>
+              <div>
+                <p class="font-weight-thin">
+                  <a :href="value.attribution.authorUrl" target="_blank">{{
+                    value.attribution.authorName
+                  }}</a>
+                  on
+                  <a :href="value.attribution.sourceUrl" target="_blank">{{
+                    value.attribution.sourceName
+                  }}</a>
+                </p>
+              </div>
             </v-col>
           </v-row>
         </v-img>
@@ -135,7 +146,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .v-image__image {
   transition: 0.3s linear;
 }
@@ -159,5 +170,18 @@ pre {
 
 img {
   border-radius: 7px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-weight-thin {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.85rem;
+  padding-right: 1rem;
 }
 </style>

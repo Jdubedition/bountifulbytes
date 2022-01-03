@@ -6,7 +6,14 @@
         "category": "Theory",
         "hero": "joris-beugels-L8bZAwmQK1M-unsplash.jpg",
         "date": "TBD",
-        "content": "6.md"
+        "content": "6.md",
+        "attribution": {
+            "image": "joris-beugels-L8bZAwmQK1M-unsplash.jpg",
+            "sourceName": "unsplash",
+            "sourceUrl": "https://unsplash.com",
+            "authorName": "Joris Beugels",
+            "authorUrl": "https://unsplash.com/@jorisbeugels"
+        }
     },
     {
         "title": "Space + Time + Observer",
@@ -15,7 +22,14 @@
         "category": "Theory",
         "hero": "greg-rakozy-oMpAz-DN-9I-unsplash.jpg",
         "date": "TBD",
-        "content": "5.md"
+        "content": "5.md",
+        "attribution": {
+            "image": "greg-rakozy-oMpAz-DN-9I-unsplash.jpg",
+            "sourceName": "unsplash",
+            "sourceUrl": "https://unsplash.com",
+            "authorName": "Greg Rakozy",
+            "authorUrl": "https://unsplash.com/@grakozy"
+        }
     },
     {
         "title": "Block on Block",
@@ -24,7 +38,14 @@
         "category": "Blockchain",
         "hero": "pexels-sharon-mccutcheon-1148496.jpg",
         "date": "TBD",
-        "content": "4.md"
+        "content": "4.md",
+        "attribution": {
+            "image": "pexels-sharon-mccutcheon-1148496.jpg",
+            "sourceName": "Pexels",
+            "sourceUrl": "https://www.pexels.com",
+            "authorName": "Sharon McCutcheon",
+            "authorUrl": "https://www.pexels.com/@mccutcheon"
+        }
     },
     {
         "title": "Cryptography In A Bottle",
@@ -33,7 +54,14 @@
         "category": "Blockchain",
         "hero": "pexels-anna-shvets-4588002.jpg",
         "date": "2021-11-27",
-        "content": "3.md"
+        "content": "3.md",
+        "attribution": {
+            "image": "pexels-anna-shvets-4588002.jpg",
+            "sourceName": "Pexels",
+            "sourceUrl": "https://www.pexels.com",
+            "authorName": "Anna Shvets",
+            "authorUrl": "https://www.pexels.com/@shvetsa"
+        }
     },
     {
         "title": "Are You Not Contained!",
@@ -42,7 +70,14 @@
         "category": "Containers",
         "hero": "cameron-venti-1cqIcrWFQBI-unsplash.jpg",
         "date": "2021-11-07",
-        "content": "2.md"
+        "content": "2.md",
+        "attribution": {
+            "image": "cameron-venti-1cqIcrWFQBI-unsplash.jpg",
+            "sourceName": "unsplash",
+            "sourceUrl": "https://unsplash.com",
+            "authorName": "Cameron Venti",
+            "authorUrl": "https://unsplash.com/@ventiviews"
+        }
     },
     {
         "title": "In The Beginning",
@@ -51,6 +86,13 @@
         "category": "Kubernetes",
         "hero": "pexels-martin-petras-287487-spark.jpg",
         "date": "2021-10-24",
-        "content": "1.md"
+        "content": "1.md",
+        "attribution": {
+            "image": "pexels-martin-petras-287487-spark.jpg",
+            "sourceName": "Pexels",
+            "sourceUrl": "https://www.pexels.com",
+            "authorName": "Martin Petras",
+            "authorUrl": "https://www.pexels.com/@martin-petras-87735"
+        }
     }
 ]

@@ -14,6 +14,18 @@
             Here, There, and Everywhere
           </div>
 
+          <div>
+            <p class="font-weight-thin">
+              <a :href="attribution.authorUrl" target="_blank">{{
+                attribution.authorName
+              }}</a>
+              on
+              <a :href="attribution.sourceUrl" target="_blank">{{
+                attribution.sourceName
+              }}</a>
+            </p>
+          </div>
+
           <!-- <v-btn
             color="primary"
             depressed
@@ -29,5 +41,32 @@
 <script>
 export default {
   name: "HomeBanner",
+
+  data: () => {
+    return {
+      attribution: {
+        image: "earth-3866609-1920-darker.jpg",
+        sourceName: "pixabay",
+        sourceUrl: "https://pixabay.com",
+        authorName: "TheDigitalArtist",
+        authorUrl: "https://pixabay.com/users/thedigitalartist-202249/",
+      },
+    };
+  },
 };
 </script>
+
+<style scoped>
+.v-application a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.v-application .font-weight-thin {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.85rem;
+  padding-right: 1rem;
+}
+</style>
