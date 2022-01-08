@@ -12,6 +12,7 @@
           height="100%"
           gradient="rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)"
           @click="reveal = !reveal"
+          class="image-container"
         >
           <v-row v-if="!value.prominent" class="fill-height text-right ma-0">
             <v-col cols="12">
@@ -35,7 +36,7 @@
                 {{ value.author }}<br />{{ value.date }}
               </div>
               <div>
-                <p class="font-weight-thin">
+                <p class="attribution font-weight-thin">
                   <a :href="value.attribution.authorUrl" target="_blank">{{
                     value.attribution.authorName
                   }}</a>
@@ -63,7 +64,8 @@
           <div
             v-html="generate(require(`@/assets/articles/${value.content}`))"
             style="padding: 30px"
-          ></div>
+            class="article-container"
+          />
           <v-card-actions class="pt-0 justify-center">
             <v-btn text color="teal accent-4" @click="reveal = false">
               Close
@@ -147,37 +149,33 @@ export default {
 </script>
 
 <style scoped>
-.v-image__image {
+.image-container >>> .v-image__image {
   transition: 0.3s linear;
 }
-.v-card--reveal {
-  bottom: 0;
-  opacity: 1 !important;
-  position: absolute;
-  width: 100%;
-}
-.theme--dark.v-application pre code {
-  background-color: unset;
-}
 
-.v-application pre code {
+.article-container >>> pre code {
+  background-color: unset;
   padding: unset;
 }
 
-pre {
+.article-container >>> pre {
   border-radius: 7px;
 }
 
-img {
+.article-container >>> img {
   border-radius: 7px;
 }
 
-a {
+.image-container >>> a {
   color: inherit;
   text-decoration: none;
 }
 
-.font-weight-thin {
+.image-container >>> .attribution a:hover {
+  text-decoration: underline;
+}
+
+.image-container >>> .font-weight-thin {
   position: absolute;
   right: 0;
   bottom: 0;
