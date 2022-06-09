@@ -16,7 +16,7 @@
         <p>
           Hello, my name is Justin Wesley, and BountifulBytes is a place for me
           to share my exploration of software engineering, cloud engineering,
-          distributed systems, decentralized applications, machines learning and
+          distributed systems, decentralized applications, machine learning and
           who knows what else...
         </p>
         <p>
